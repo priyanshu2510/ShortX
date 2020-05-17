@@ -7,7 +7,7 @@ function connect() {
     mongoose.set('useNewUrlParser', true);
     mongoose.set('useFindAndModify', false);
     mongoose.set('useCreateIndex', true);
-    mongoose.connect('mongodb+srv://priyanshu:9570141290@cluster0-rpsrd.mongodb.net/test?retryWrites=true&w=majority', { useUnifiedTopology: true });
+    mongoose.connect('mongodb+srv://priyanshu:<password>@cluster0-rpsrd.mongodb.net/test?retryWrites=true&w=majority', { useUnifiedTopology: true });
     
     mongoose.connection.once('open', function () {
         console.log("Database connection opened");
@@ -23,7 +23,7 @@ function connect() {
 
     mongoose.connection.on('disconnected', function () {
         console.log("Database disconnected");
-        mongoose.connect('mongodb+srv://priyanshu:9570141290@cluster0-rpsrd.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
+        mongoose.connect('mongodb+srv://priyanshu:<password>@cluster0-rpsrd.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true });
     });
 }
 
