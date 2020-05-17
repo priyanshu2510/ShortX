@@ -1,4 +1,4 @@
 # ShortX
 URL Shortener
  
-http://www.shortx.priyanshu.co/shortx
+http://shortx.priyanshu.co/shortx
