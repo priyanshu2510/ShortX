@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ShortX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" type="image/png" href="./images/1.jpg" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div>
+        <div class="limiter">
+            <div class="container-login100">
+                <div class="wrap-login100">
+                    <div class="login100-form-title">
+                        <!-- <span class="login100-form-title-1">
+                            ShortX
+                        </span> -->
+                    </div>
+
+                    <form class="login100-form validate-form" onsubmit=event.preventDefault()>
+                        <div class="wrap-input100 validate-input m-b-26" data-validate="URL is required" data-validate1="Valid URL is required">
+                            <span class="label-input100">URL</span>
+                            <input class="input100" type="text" name="name"  id="url" placeholder="Shorten your link"></input>
+                            <span class="focus-input100"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+                            <span class="label-input100">Custom </span>
+                            <input class="input100" type="text" name="pass" 
+                                 placeholder="Keyword (Optional)" id="cus"></input>
+                            <span class="focus-input100"></span>
+                        </div><br><br><br>
+
+                        
+
+                        <div class="container-login100-form-btn">
+                            <button class="login100-form-btn" onClick=verify() id="btnSubmit">
+                                ShortX  <span class="rotator"></span>
+                            </button>
+                        </div><br><br><br><br>
+                        <p id="errMsg" style="color: red;"></p>
+                        
+                    </form>
+                </div>
+                
+            </div>
+            <footer>
+                <div class="footer-copyright">
+                    <p>©  priyanshu.co </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="./js/lib/jquery-3.2.1.min.js"></script>
+    <!-- <script src="./js/lib/popper.min.js"></script>
+    <script src="./js/lib/bootstrap.min.js"></script> -->
+    <script src="./js/lib/tilt.jquery.min.js"></script>
+    <script src="./js/shortx.js"></script>
+
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+
+
+
+
+
+</body>
+
+</html>
