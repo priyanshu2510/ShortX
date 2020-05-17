@@ -36,7 +36,7 @@ router.post('/create', async (req, res) => {
                     cshort.create({short_url:key});
                     return res.json({
                         status: 200,
-                        message: `http://bit.ly/${key}`
+                        message: `http://shortx.priyanshu.co/${key}`
                     });
                 }
 
@@ -56,7 +56,7 @@ router.post('/create', async (req, res) => {
                     return res.json({
                         
                         status: 200,
-                        message: `http://bit.ly/${custom}`
+                        message: `http://shortx.priyanshu.co/${custom}`
                     });
                 }
 
